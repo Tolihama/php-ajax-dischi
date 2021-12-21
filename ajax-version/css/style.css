@@ -1,0 +1,22 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+header {
+    background: #132431;
+    height: 100px;
+}
+
+
+/* MAIN */
+main {
+    background: #182d3d;
+}
+
+.album {
+    color: #fff;
+    background: #000;
+}

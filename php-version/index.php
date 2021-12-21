@@ -29,8 +29,8 @@
                         foreach ($database as $album) :
                     ?>
                     <div class="col-sm-12 col-md-6 col-lg-4 p-3">
-                        <div class="album d-flex flex-column text-center h-100">
 
+                        <div class="album d-flex flex-column text-center h-100">
                             <img class="w-100 px-5 py-4" src="<?php echo $album['poster']; ?>" alt="">
                             <div class="px-3">
                                 <h3 class="h5">
@@ -47,6 +47,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                     <?php
                         endforeach;
@@ -54,13 +55,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
     </main>
- 
 </body>
 </html>
