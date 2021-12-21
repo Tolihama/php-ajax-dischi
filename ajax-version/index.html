@@ -25,26 +25,28 @@
                 <div class="d-flex justify-content-center">
                     <div class="row w-75">
     
-                        <div class="col-sm-12 col-md-6 col-lg-4 p-3">
-    
+                        <div 
+                            class="col-sm-12 col-md-6 col-lg-4 p-3"
+                            v-for="(album, index) in albums"
+                            :key="`album-${index}`"
+                        >
                             <div class="album d-flex flex-column text-center h-100">
-                                <img class="w-100 px-5 py-4" src="<?php echo $album['poster']; ?>" alt="">
+                                <img class="w-100 px-5 py-4" :src="album.poster" :alt="album.title">
                                 <div class="px-3">
-                                    <h3 class="h5">
-    
+                                    <h3 class="h5 fw-bold">
+                                        {{ album.title }}
                                     </h3>
                                     <div class="pb-1">
-    
+                                        {{ album.author }}
                                     </div>
                                     <div class="pb-1 fs-5">
-    
+                                        {{ album.year }}
                                     </div>
                                     <div class="pb-4">
-    
+                                        {{ album.genre }}
                                     </div>
                                 </div>
                             </div>
-                            
                         </div>
     
                     </div>

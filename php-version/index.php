@@ -33,7 +33,7 @@
                         <div class="album d-flex flex-column text-center h-100">
                             <img class="w-100 px-5 py-4" src="<?php echo $album['poster']; ?>" alt="">
                             <div class="px-3">
-                                <h3 class="h5">
+                                <h3 class="h5 fw-bold">
                                     <?php echo $album['title']; ?>
                                 </h3>
                                 <div class="pb-1">
